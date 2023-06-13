@@ -1,8 +1,7 @@
 ---
 import Button from "./Button.astro";
-import * as config from "../../config.js";
 
-let apiKey = config.API_KEY;
+const apiKey = import.meta.env.API_KEY;
 ---
 
 <div class="relative">
@@ -84,6 +83,7 @@ let apiKey = config.API_KEY;
 			class="w-full h-[100vw] min-h-[300px] max-h-[500px]"
 			style="border:0"
 			loading="lazy"
-			src={apiKey}></iframe>
+			src=`https://www.google.com/maps/embed/v1/view?zoom=15&center=52.8579%2C-4.4844&key=${apiKey}`
+		></iframe>
 	</div>
 </div>
