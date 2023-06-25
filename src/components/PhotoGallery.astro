@@ -2,131 +2,470 @@
 import Button from "./Button.astro";
 ---
 
-<!-- Mobile & Tablet -->
-<div class="relative laptop:hidden">
-	<div class="bg-dark-blue">
-		<div class="max-w-[1296px] w-[90%] mx-auto pt-16 tablet:pt-20">
-			<h2 class="text-h2-sm tablet:text-h2-md text-white font-serif">
-				Photo Gallery
-			</h2>
-			<div class="w-full pt-4 tablet:pt-6">
-				<div class="w-full bg-slate-500 aspect-[3/4] max-h-[640px]"></div>
-			</div>
-			<div class="relative flex items-end justify-between pt-4">
-				<p class="text-h3 font-serif leading-4 text-white -mb-[2px]">
-					01 <span class="text-white/50">/ 20</span>
-				</p>
-				<div class="absolute right-0 top-0 pt-4 flex gap-4">
-					<a href="#">
-						<Button intent={"yellowBadge"}>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="currentColor"
-								class="w-6 h-6"
-							>
-								<path
-									stroke-linecap="square"
-									stroke-linejoin="round"
-									d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-							</svg>
-						</Button>
-					</a>
-					<a href="#">
-						<Button intent={"yellowBadge"}>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="currentColor"
-								class="w-6 h-6"
-							>
-								<path
-									stroke-linecap="square"
-									stroke-linejoin="round"
-									d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-							</svg>
-						</Button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bg-white">
-		<div class="max-w-[1296px] w-[90%] mx-auto pt-12 pb-16 tablet:pb-20">
-			<p class="text-body text-dark-blue font-sans max-w-xl">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec augue nibh
-				odio tincidunt. Blandit sagittis, purus sociis arcu. Sit vitae tristique
-				est amet.
-			</p>
-		</div>
-	</div>
-</div>
-
-<!-- Laptop+ -->
-<div class="relative hidden laptop:block">
-	<div class="bg-dark-blue absolute -z-10 h-2/3 w-full px-[5%] top-0 left-0">
-		<p class="absolute -bottom-0.5 text-h3 font-serif leading-4 text-white">
-			01 <span class="text-white/50">/ 20</span>
-		</p>
-	</div>
-	<div class="flex max-w-[1296px] w-[90%] mx-auto gap-x-12 py-20 desktop:py-36">
-		<div class="w-full">
-			<div class="h-full flex flex-col justify-between">
+<div id="photo-gallery">
+	<!-- Mobile & Tablet -->
+	<div class="relative laptop:hidden">
+		<div class="bg-dark-blue -z-10">
+			<div class="relative max-w-[1296px] w-[90%] mx-auto pt-16 tablet:pt-20">
 				<h2
-					class="text-white text-h2-md desktop:text-h2-lg xl:text-h2-xl font-serif"
+					class="relative text-h2-sm tablet:text-h2-md text-white font-serif before:content-[url(./assets/beach-svgs/sea-waves.svg)] before:absolute before:-top-full before:right-full before:w-[5vw] before:h-[5vw]"
 				>
 					Photo Gallery
 				</h2>
-				<p class="text-white text-body desktop:text-body-lg font-sans max-w-xl">
+				<div class="w-full pt-4 tablet:pt-6">
+					<div class="w-full aspect-[3/4] max-h-[640px]">
+						<div class="swiper photoMobSwiper h-full w-full">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_2.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_3.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_4.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_5.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_6.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_7.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_8.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_9.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_10.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_11.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_12.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_13.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_14.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_15.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_16.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_17.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_18.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_19.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_20.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+								<div class="swiper-slide rounded-2xl">
+									<img
+										src="./assets/photos/IMG_21.jpg"
+										alt="beach"
+										class="object-cover aspect-[3/4]"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="relative flex items-end justify-between pt-4 text-white/90">
+					<div class="swiper-mob-pagin text-h3 font-serif leading-4 -mb-[2px]">
+						<p class="text-h3 font-serif leading-4 text-white -mb-[2px]">
+							01 <span class="text-white/50">/ 20</span>
+						</p>
+					</div>
+					<div class="absolute right-0 top-0 pt-4 flex gap-4">
+						<span class="swiper-mob-prev">
+							<Button intent={"yellowBadge"}>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									class="w-6 h-6"
+								>
+									<path
+										stroke-linecap="square"
+										stroke-linejoin="round"
+										d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+								</svg>
+							</Button>
+						</span>
+						<span class="swiper-mob-next">
+							<Button intent={"yellowBadge"}>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									class="w-6 h-6"
+								>
+									<path
+										stroke-linecap="square"
+										stroke-linejoin="round"
+										d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+								</svg>
+							</Button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-white">
+			<div class="max-w-[1296px] w-[90%] mx-auto pt-12 pb-16 tablet:pb-20">
+				<p class="text-body text-dark-blue font-sans max-w-xl">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec augue
 					nibh odio tincidunt. Blandit sagittis, purus sociis arcu. Sit vitae
 					tristique est amet.
 				</p>
-				<div class="flex gap-4">
-					<a href="#">
-						<Button intent={"yellowBadge"}>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="currentColor"
-								class="w-6 h-6"
-							>
-								<path
-									stroke-linecap="square"
-									stroke-linejoin="round"
-									d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-							</svg>
-						</Button>
-					</a>
-					<a href="#">
-						<Button intent={"yellowBadge"}>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="currentColor"
-								class="w-6 h-6"
-							>
-								<path
-									stroke-linecap="square"
-									stroke-linejoin="round"
-									d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-							</svg>
-						</Button>
-					</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Laptop+ -->
+	<div class="relative hidden laptop:block">
+		<div class="bg-dark-blue absolute -z-10 h-2/3 w-full px-[5%] top-0 left-0">
+			<div
+				class="w-[90%] max-w-[1296px] absolute -bottom-0.5 left-1/2 -translate-x-1/2 text-white/90"
+			>
+				<div class="swiper-pagin text-h3 font-serif leading-4"></div>
+			</div>
+		</div>
+		<div
+			class="flex max-w-[1296px] w-[90%] mx-auto gap-x-12 py-20 desktop:py-36"
+		>
+			<div class="w-full">
+				<div class="h-full flex flex-col justify-between">
+					<h2
+						class="relative text-white text-h2-md desktop:text-h2-lg xl:text-h2-xl font-serif before:content-[url(./assets/beach-svgs/sea-waves.svg)] before:absolute before:-top-full before:right-full before:w-[5vw] before:h-[5vw] desktop:before:w-14 desktop:before:h-14"
+					>
+						Photo Gallery
+					</h2>
+					<p
+						class="text-white text-body desktop:text-body-lg font-sans max-w-xl"
+					>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec augue
+						nibh odio tincidunt. Blandit sagittis, purus sociis arcu. Sit vitae
+						tristique est amet.
+					</p>
+					<div class="flex gap-4">
+						<span class="swiper-prev">
+							<Button intent={"yellowBadge"}>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									class="w-6 h-6"
+								>
+									<path
+										stroke-linecap="square"
+										stroke-linejoin="round"
+										d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+								</svg>
+							</Button>
+						</span>
+						<span class="swiper-next">
+							<Button intent={"yellowBadge"}>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									class="w-6 h-6"
+								>
+									<path
+										stroke-linecap="square"
+										stroke-linejoin="round"
+										d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+								</svg>
+							</Button>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full">
+				<div class="ml-auto aspect-[3/4] max-h-[640px]">
+					<div class="swiper photoSwiper h-full w-full">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_2.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_3.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_4.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_5.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_6.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_7.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_8.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_9.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_10.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_11.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_12.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_13.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_14.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_15.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_16.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_17.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_18.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_19.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_20.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+							<div class="swiper-slide rounded-2xl">
+								<img
+									src="./assets/photos/IMG_21.jpg"
+									alt="beach"
+									class="object-cover aspect-[3/4]"
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="w-full">
-			<div class="ml-auto bg-slate-500 aspect-[3/4] max-h-[640px]"></div>
-		</div>
 	</div>
 </div>
+
+<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script
+	is:inline
+	src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script is:inline>
+var swiper = new Swiper(".photoMobSwiper", {
+	effect: "cards",
+	grabCursor: true,
+	navigation: {
+		nextEl: ".swiper-mob-next",
+		prevEl: ".swiper-mob-prev",
+	},
+	pagination: {
+		el: ".swiper-mob-pagin",
+		type: "fraction",
+	},
+});
+
+var swiper = new Swiper(".photoSwiper", {
+	effect: "cards",
+	grabCursor: true,
+	navigation: {
+		nextEl: ".swiper-next",
+		prevEl: ".swiper-prev",
+	},
+	pagination: {
+		el: ".swiper-pagin",
+		type: "fraction",
+	},
+});
+</script>

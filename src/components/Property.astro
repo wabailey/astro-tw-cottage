@@ -1,13 +1,13 @@
 ---
 ---
 
-<div class="bg-light-yellow">
+<div id="property" class="bg-light-yellow overflow-hidden">
 	<div
-		class="max-w-[1296px] w-[90%] mx-auto py-16 tablet:py-20 desktop:py-36 laptop:flex laptop:gap-x-12 desktop:gap-x-16"
+		class="relative max-w-[1296px] w-[90%] mx-auto py-16 tablet:py-20 desktop:py-36 laptop:flex laptop:gap-x-12 desktop:gap-x-16"
 	>
-		<div class="w-full">
+		<div class="relative w-full">
 			<h2
-				class="text-h2-sm tablet:text-h2-md desktop:text-h2-lg xl:text-h2-xl text-dark-blue font-serif"
+				class="relative text-h2-sm tablet:text-h2-md desktop:text-h2-lg xl:text-h2-xl text-dark-blue font-serif before:content-[url(./assets/beach-svgs/sea-waves.svg)] before:absolute before:-top-full before:right-full before:w-[5vw] before:h-[5vw] desktop:before:w-14 desktop:before:h-14"
 			>
 				The Property
 			</h2>
@@ -42,8 +42,11 @@
 				/>
 			</div>
 		</div>
-		<span class="absolute">
-			<svg></svg>
-		</span>
+		<div class="absolute -left-[10%] -bottom-[5%] pointer-events-none">
+			<img
+				src="./assets/beach-svgs/seashell-1.svg"
+				class="w-[180px] tablet:w-[240px] desktop:w-[300px]"
+			/>
+		</div>
 	</div>
 </div>
