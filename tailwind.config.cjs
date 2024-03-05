@@ -9,7 +9,7 @@ module.exports = {
 			xl: "1900px",
 		},
 		fontFamily: {
-			sans: ["'Nunito Sans'", "sans-serif"],
+			sans: ["Rubik", "sans-serif"],
 			serif: ["Cardo", "serif"],
 		},
 		extend: {
@@ -42,7 +42,7 @@ module.exports = {
 				"label-sm": ["12px", { lineHeight: "16px", letterSpacing: "1.2px", fontWeight: "700" }],
 				"subtitle-lg": ["14px", { lineHeight: "19px", letterSpacing: "0.25em", fontWeight: "600" }],
 				"subtitle-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.25em", fontWeight: "600" }],
-				"caption-lg": ["14px", { lineHeight: "19px", letterSpacing: "0.5px", fontWeight: "400" }],
+				"caption-lg": ["13px", { lineHeight: "19px", letterSpacing: "0.5px", fontWeight: "400" }],
 				"caption-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.5px", fontWeight: "400" }],
 			},
 		},
