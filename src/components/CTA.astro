@@ -3,31 +3,32 @@ import Button from "./Button.astro";
 ---
 
 <div class="relative mx-auto w-full">
-	<img
-		src="./assets/photos/IMG_1.jpg"
-		alt="Cottage"
-		class="max-h-screen object-cover w-full aspect-[3/4] desktop:aspect-video"
-	/>
-	<div
-		class="absolute top-0 left-0 h-full w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-black/30 via-black/60 to-black/90"
-	>
-	</div>
+  <img
+    src="./assets/photos/IMG_1.jpg"
+    alt="Cottage"
+    class="max-h-screen object-cover w-full aspect-[3/4] desktop:aspect-video"
+  />
+  <div
+    class="absolute top-0 left-0 h-full w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-black/30 via-black/60 to-black/90"
+  >
+  </div>
 
-	<h1
-		class="absolute w-full px-[5%] top-1/3 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center font-serif text-white text-hero-sm tablet:text-hero-md desktop:text-hero-lg xl:text-hero-xl"
-	>
-		Fancy a stay?
-	</h1>
-	<p
-		class="absolute w-full px-[5%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center font-sans italic text-white text-caption-sm tablet:text-caption-lg"
-	>
-		If you're interested in staying at our fabulous cottage, please tell us your
-		preferred dates by clicking the button below.
-	</p>
-	<a
-		href="mailto:llanbedrogholidays@gmail.com"
-		class="absolute top-2/3 left-1/2 -translate-y-1/2 -translate-x-1/2"
-	>
-		<Button intent="yellowSerif">Book Now</Button>
-	</a>
+  <h1
+    class="absolute w-full px-[5%] top-1/3 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center font-serif text-white text-hero-sm tablet:text-hero-md desktop:text-hero-lg xl:text-hero-xl"
+  >
+    Fancy a stay?
+  </h1>
+  <p
+    class="absolute w-full px-[5%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center font-sans italic text-white text-caption-sm tablet:text-caption-lg"
+  >
+    If you're interested in staying at our fabulous cottage, please tell us your
+    preferred dates by clicking the button below.
+  </p>
+  <a
+    href="https://www.abersochholidayhomes.co.uk/cottage/oc-24447-benar"
+    target="_blank"
+    class="absolute top-2/3 left-1/2 -translate-y-1/2 -translate-x-1/2"
+  >
+    <Button intent="yellowSerif">Book Now</Button>
+  </a>
 </div>
